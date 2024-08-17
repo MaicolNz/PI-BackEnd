@@ -10,6 +10,9 @@
         <module name="PIBackend" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="PI-BackEnd" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
