@@ -16,6 +16,8 @@ public class Usuario {
     private String apellido;
     private String email;
     private String password;
+    private Boolean administrador;
+
 
     public Usuario() {
     }
