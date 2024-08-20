@@ -1,9 +1,7 @@
 package com.PI.Back.PIBackend.entity;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -13,6 +11,7 @@ import java.util.Collection;
 @Table(name = "USUARIOS" , uniqueConstraints = {@UniqueConstraint(columnNames = {"email"})})
 @Builder
 @Getter @Setter
+
 public class Usuario implements UserDetails {
 
     @Id
