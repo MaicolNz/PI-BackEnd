@@ -1,5 +1,6 @@
 package com.PI.Back.PIBackend.dto.entrada;
 
+import jakarta.annotation.Nullable;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
 import lombok.Getter;
@@ -34,13 +35,20 @@ public class UsuarioEntradaDto {
     )
     private String password;
 
+    @Nullable
+    private String direccion;
+    @Nullable
+    private String celular;
+
     public UsuarioEntradaDto() {
     }
 
-    public UsuarioEntradaDto(String nombre, String apellido, String email, String password) {
+    public UsuarioEntradaDto(String nombre, String apellido, String email, String password, @Nullable String direccion, @Nullable String celular) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
         this.password = password;
+        this.direccion = direccion;
+        this.celular = celular;
     }
 }

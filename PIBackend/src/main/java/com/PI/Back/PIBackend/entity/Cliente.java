@@ -10,20 +10,20 @@ import lombok.Setter;
 @Setter
 public class Cliente {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String direccion;
-    private String celular;
 
-    public Cliente(Long id, String direccion, String celular) {
+    public void setId(Long id) {
         this.id = id;
-        this.direccion = direccion;
-        this.celular = celular;
     }
 
-    public Cliente() {
-
+    public Long getId() {
+        return id;
     }
+
+
+    // public Cliente() {
+
+    //}
 
 }
 

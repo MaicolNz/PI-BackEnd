@@ -8,18 +8,23 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class UsuarioService {
     private final Logger LOGGER = LoggerFactory.getLogger(UsuarioService.class);
     @Autowired
     UsuarioRepository usuarioRepository;
 
-    public String listarUsuarios() {
+    public List<Usuario> listarUsuarios() {
         LOGGER.info("ACA ESTAMOS");
-        return "Usuarios: bla bla";
+        return usuarioRepository.findAll();
     }
     public Usuario crearUsuario(Usuario usuario) {
+    
         return usuarioRepository.save(usuario);
     }
+
+
 
 }

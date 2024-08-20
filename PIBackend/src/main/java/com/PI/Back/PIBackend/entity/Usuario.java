@@ -16,17 +16,22 @@ public class Usuario {
     private String apellido;
     private String email;
     private String password;
-    private Boolean administrador;
+    private String direccion;
+    private String celular;
+    //private Boolean administrador;
+
 
 
     public Usuario() {
     }
 
-    public Usuario(long id, String nombre, String apellido, String email, String password) {
+    public Usuario(long id, String nombre, String apellido, String email, String password, String direccion, String celular) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
         this.password = password;
+        this.direccion = direccion;
+        this.celular = celular;
     }
 }
