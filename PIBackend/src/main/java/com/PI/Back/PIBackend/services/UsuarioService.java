@@ -21,7 +21,7 @@ public class UsuarioService {
         return usuarioRepository.findAll();
     }
     public Usuario crearUsuario(Usuario usuario) {
-    
+
         return usuarioRepository.save(usuario);
     }
 

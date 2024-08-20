@@ -27,9 +27,5 @@ public class UsuarioController {
     public List<Usuario> listarUsuarios(){
         return usuarioService.listarUsuarios();
     }
-    @PostMapping("/usuarios")
-    @ResponseBody
-    public Usuario crearUsuario(@RequestBody Usuario usuario){
-        return usuarioService.crearUsuario(usuario);
-    }
+
 }
