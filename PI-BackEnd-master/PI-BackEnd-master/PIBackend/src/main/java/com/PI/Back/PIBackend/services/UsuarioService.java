@@ -3,6 +3,7 @@ package com.PI.Back.PIBackend.services;
 
 import com.PI.Back.PIBackend.entity.Role;
 import com.PI.Back.PIBackend.entity.Usuario;
+import com.PI.Back.PIBackend.exceptions.ResourceNotFoundException;
 import com.PI.Back.PIBackend.repository.UsuarioRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -21,7 +22,9 @@ import java.util.List;
 public class UsuarioService {
     private final Logger LOGGER = LoggerFactory.getLogger(UsuarioService.class);
     @Autowired
-    UsuarioRepository usuarioRepository;
+    private UsuarioRepository usuarioRepository;
+
+
 
     @Transactional
     @Secured("ROLE_ADMIN")
@@ -42,10 +45,6 @@ public class UsuarioService {
         //Asignar un nuevo rol
         usuario.setRole(newRole);
         usuarioRepository.save(usuario);
-
-
-
-
     }
 
 

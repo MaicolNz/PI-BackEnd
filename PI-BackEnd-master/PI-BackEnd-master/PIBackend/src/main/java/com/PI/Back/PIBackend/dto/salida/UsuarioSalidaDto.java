@@ -1,9 +1,13 @@
 package com.PI.Back.PIBackend.dto.salida;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class UsuarioSalidaDto {
 
     private long id;
@@ -16,15 +20,4 @@ public class UsuarioSalidaDto {
     private String direccion;
     private String celular;
 
-    public UsuarioSalidaDto() {
-    }
-
-    public UsuarioSalidaDto(long id, String nombre, String apellido, String email, String direccion, String celular) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.email = email;
-        this.direccion = direccion;
-        this.celular = celular;
-    }
 }

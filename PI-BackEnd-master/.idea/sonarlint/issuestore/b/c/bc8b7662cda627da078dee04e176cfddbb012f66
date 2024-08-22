@@ -1,5 +1,7 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±‰äšûÿÿÿÿ
-f	java:S116"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùöî
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±‰äšûÿÿÿÿ8Í´áİ—2J$ec30cc26-6cd2-4cca-86b4-8d11e9b87ec5
+“	java:S116"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùöî8×´áİ—2J$434ebb25-69e6-4df9-9d14-c1826d8460f7
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ø´áİ—2J$32e1b3a1-639e-4c88-816c-4abeef808485
+š
+java:S1128"WRemove this unused import 'com.PI.Back.PIBackend.exceptions.ResourceNotFoundException'.(êÍ€›8ÿ€îİ—2J$df90f466-103b-4a3a-8cb4-eea15d5504bc

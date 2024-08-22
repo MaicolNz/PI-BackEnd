@@ -1,2 +1,7 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±‰äšûÿÿÿÿ
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±‰äšûÿÿÿÿ8ÍÊ‚Ş—2J$23f43152-e648-424b-ade2-df1a8dcf674e
+“	java:S116"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùöî8ÖÊ‚Ş—2J$45a36b84-f18b-433d-b71b-a2b3b3f48c13
+x
+java:S3416"5Update this logger to use "InstrumentoService.class".(Ùöî8×Ê‚Ş—2J$48f526b9-fd8a-4d47-87c9-4a0a30798b2e
+A
+java:S3457"%String contains no format specifiers.(ÇøE8Áà§Ş—2
