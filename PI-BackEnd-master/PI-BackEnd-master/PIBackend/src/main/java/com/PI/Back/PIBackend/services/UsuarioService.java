@@ -44,8 +44,12 @@ public class UsuarioService {
         usuarioRepository.save(usuario);
 
 
+
+
     }
 
 
-
+    public List<Usuario> listarUsuarios() {
+        return usuarioRepository.findAll();
+    }
 }
