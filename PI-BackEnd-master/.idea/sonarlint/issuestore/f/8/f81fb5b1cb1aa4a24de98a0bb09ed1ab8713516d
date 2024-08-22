@@ -1,0 +1,13 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(îï”ÀJ$8a47dc7c-9cb3-402e-bd03-514e8256682d
+Œ	java:S116"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßÂÖéJ$5265c456-2a6c-4205-aa1f-6a2763d08ace
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$b7198de9-e69c-46c8-97ff-fa2ab3e8fccd
+m
+java:S3416"1Update this logger to use "AuthController.class".(ßÂÖéJ$6f73fc85-517b-42e9-9701-9260a2556daf
+o
+java:S6837"3Remove this superfluous "@ResponseBody" annotation.(Ü¥¼J$139deb8d-9af8-424f-bff8-dab344af1bf5
+o
+java:S6837!"3Remove this superfluous "@ResponseBody" annotation.(Ü¥¼J$39004693-0e87-49fb-a19f-063b56e32e0e
+f
+java:S1068"*Remove this unused "LOGGER" private field.(ßÂÖéJ$f9918a5c-030e-4434-917b-5e5269ee7a20
