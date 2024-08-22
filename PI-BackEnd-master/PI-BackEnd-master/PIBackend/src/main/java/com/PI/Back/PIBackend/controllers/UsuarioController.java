@@ -25,4 +25,6 @@ public class UsuarioController {
         return usuarioService.listarUsuarios();
     }
 
+
+
 }
