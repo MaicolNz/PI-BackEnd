@@ -47,7 +47,7 @@ public class Usuario implements UserDetails {
 
     @Override
     public String getUsername() {
-        return null;
+        return nombre;
     }
 
     @Override
@@ -68,5 +68,9 @@ public class Usuario implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    public String getContraseña() {
+        return password;
     }
 }

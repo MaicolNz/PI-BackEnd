@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UsuarioService {
@@ -25,6 +26,13 @@ public class UsuarioService {
         return usuarioRepository.save(usuario);
     }
 
-
+    public boolean verificarCredenciales(String correo, String contraseña) {
+        Optional<Usuario> usuarioOpt = usuarioRepository.findByUsername(correo);
+        if (usuarioOpt.isPresent()) {
+            Usuario usuario = usuarioOpt.get();
+            return usuario.getContraseña().equals(contraseña); // No es recomendable almacenar contraseñas en texto plano
+        }
+        return false;
+    }
 
 }
