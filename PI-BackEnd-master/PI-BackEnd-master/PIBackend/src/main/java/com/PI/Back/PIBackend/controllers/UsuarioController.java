@@ -1,5 +1,6 @@
 package com.PI.Back.PIBackend.controllers;
 
+import com.PI.Back.PIBackend.entity.Role;
 import com.PI.Back.PIBackend.entity.Usuario;
 import com.PI.Back.PIBackend.services.UsuarioService;
 import lombok.RequiredArgsConstructor;
@@ -24,6 +25,15 @@ public class UsuarioController {
     public List<Usuario> listarUsuarios() {
         return usuarioService.listarUsuarios();
     }
+
+
+    @PutMapping("/changerole")
+    @ResponseBody
+    public void cambiarRol(@RequestParam("email") String email){
+         usuarioService.asignarRole(email, Role.ADMIN);
+    }
+
+
 
 
 
